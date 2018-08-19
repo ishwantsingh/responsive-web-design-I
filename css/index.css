@@ -1,3 +1,429 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0 auto;
+	height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.navigation {
+	color: grey;
+	display: flex;
+	flex-direction: row;
+	padding: 0px;
+	text-decoration: none;
+	margin: 60px 60px 60px 60px;
+	justify-content: space-evenly;
+}
+.navigationItems {
+	color: grey;
+	padding: 10px;
+	text-decoration: none;
+	margin: 5px;
+}
+.logo {
+    order: 1;
+    margin-bottom: 0;
+}
+.head {
+	position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* align-content: center; */
+    padding: 30px 80px 30px 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 77px;
+    margin-right: 30px;
+}
+.on {
+    padding: 0 75px 0 75px;
+}
+.demand {
+    padding: 0 15px 0 15px;
+}
+.image {
+	margin-bottom: 0px;
+    margin-top: 0px;
+}
+.textpic {
+	display: flex;
+	flex-direction: row;
+    justify-content: center;
+	margin: 0 auto;
+}
+hr {
+	text-align: center;
+}
+.getit {
+	padding: 5px 30px 5px 30px;
+	font-size: 20px;
+	font-family: serif;
+	margin: 0 320px 0 320px;
+    border-width: 5px;
+    border: solid dimgray;
+}
+.topdata {
+	font-size: 21px;
+	display: flex;
+	margin: 40px 80px 40px 200px;
+	text-align:left;
+}
+.para3 {
+	margin: 100px 210px 100px 200px;
+}
+.bottomdata {
+	display: flex;
+	flex-direction: row;
+	font-size: 21px;
+	position: relative;
+    /* margin: 80px 200px 100px 200px; */
+    width: 70%;
+    margin: 0 auto;
+}
+.address {
+	font-size: 18px;
+	margin: 20px 0px 40px 220px;
+}
+footer {
+	text-align: center;
+}
+.para4 {
+	padding: 20px;
+	/* width: 290px;
+	height: 100px; */
+}
+.para5 {
+	padding: 20px;
+	/* width: 290px;
+	height: 100px; */
+}
+.para6 {
+	padding: 20px;
+	/* width: 290px;
+	height: 100px; */
+}
+.para1 {
+	padding: 20px;
+	width: 450px;
+	height: 100px;
+}
+.para2 {
+	padding: 20px;
+	width: 450px;
+	height: 100px;
+}
+.mainData {
+	margin: 50px 100px 50px 100px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-around;
+}
+.fullBody {
+	margin: 0 10% 0 10%;
+	align-content: center;
+}
+.paras1 {
+	margin: 0 0 15px 0;
+	background-color: rgba(230, 228, 228, 0.61);
+	padding: 10px;
+	width: 48%;
+	height: 200px;
+	border: 1px solid gray;
+}
+.paras2 {
+	margin: 0 0 15px 0;
+	background-color: rgba(230, 228, 228, 0.61);
+	padding: 10px;
+	width: 48%;
+	height: 200px;
+	border: 1px solid gray;
+}
+.paras3 {
+	margin: 15px 0 15px 0;
+	background-color: rgba(230, 228, 228, 0.61);
+	padding: 10px;
+	width: 48%;
+	height: 200px;
+	border: 1px solid gray;;
+}
+.paras4 {
+	margin: 15px 0 15px 0;
+	background-color: rgba(230, 228, 228, 0.61);
+	padding: 10px;
+	width: 48%;
+	height: 200px;
+	border: 1px solid gray;
+}
+.paras5 {
+	margin: 15px 0 0 0;
+	background-color: rgba(230, 228, 228, 0.61);
+	padding: 10px;
+	width: 48%;
+	height: 200px;
+	border: 1px solid gray;
+}
+.paras6 {
+	margin: 15px 0 0 0;
+	background-color: rgba(230, 228, 228, 0.61);
+	padding: 10px;
+	width: 48%;
+	height: 200px;
+	border: 1px solid gray;
+}
+.heading {
+	margin: 50px 100px 50px 100px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.services-header-img {
+	margin: 50px 100px 50px 100px;
+}
+.lastData {
+	margin: 50px 100px 50px 100px;
+}
+.lineHr {
+	width: 82%;
+}
+.button {
+	padding: 5px 20px 5px 20px;
+	background-color: white;
+}
+.lastData {
+	padding: 10px 20px 10px 0px;
+	display: flex;
+	flex-direction: row;
+}
+.bigFont {
+	font-size: 23px;
+}
+ul {
+	list-style-type: square;
+	list-style-position: inside;
+}
+@media (max-width:800px) {
+    
+    .logo {
+        order: 0;
+        align-self: flex-start;
+        margin: 0px auto;
+        align-items: flex-start;
+    }
+    .image {
+        display: none;
+    }
+    .lineHr {
+        width: 95%;
+    }
+    .textpic {
+        margin: 0 auto;
+        font-size: 28px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .getit {
+        font-size: 23px;
+        display: flex;
+        width: 24%;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .navigation {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .navigation2 {
+        flex-direction: row;
+        align-content: flex-end;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 42px;
+    }
+    .topdata {
+        font-size: 18px;
+        margin: 0 auto;
+    }
+    .para1 {
+        
+        height: 200px;
+        width: 380px;
+    }
+    .para2 {
+        height: 20px;
+        width: 380px;
+    }
+    .bottomdata {
+        width: 100%;
+        font-size: 18px;
+        margin: 0 auto;
+    }
+    .para3 {
+        
+        margin: 0 auto;
+    }
+    .para4 {
+        height:200px;
+        width: 300px;
+    }
+    .para5 {
+        height:200px;
+        width: 300px;
+    }
+    .para6 {
+        height:200px;
+        width: 300px;
+    }
+    .address {
+        margin: 0 auto;
+        margin-left: 3%;
+    }
+    .head {
+        margin: 0;
+        padding: 30px 30px 30px 80px;
+    }
+    
+}
+
+@media (max-width:500px) {
+    .navigation2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: space-around;
+        margin: 0 auto;
+    }
+    .logo {
+        order: 0;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        align-self: flex-start;
+
+    }
+    .navigation {
+        height: 300px;
+        width: 80%;
+    }
+    navigationItems {
+        border: 1px solid gray;
+    }
+    .getit {
+        font-size: 18px;
+        width: 30%;
+        padding: 5px;
+    }
+    .topdata {
+        flex-wrap: wrap;
+    }
+    .para1 {
+        height: 150px;
+        margin: 0 auto;
+        padding: 10px;
+        width: 98%;
+    }
+    .para2 {
+        margin: 0 auto;
+        padding: 10px;
+        width: 98%;
+        height: 150px;
+    }
+    .para3 {
+        margin: 0 auto;
+    }
+    .bottomdata {
+        margin: 0 auto;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .para4 {
+        height: 150px;
+        margin: 0 auto;
+        padding: 10px;
+        width: 98%;
+    }
+    .para5 {
+        height: 150px;
+        margin: 0 auto;
+        padding: 10px;
+        width: 98%;
+    }
+    .para6 {
+        height: 150px;
+        margin: 0 auto;
+        padding: 10px;
+        width: 98%;
+    }
+    a {
+        border-bottom: 1px solid gray;
+        width:100%;
+    }
+    .head {
+        padding: 30px 30px 30px 80px;
+    }
+}
