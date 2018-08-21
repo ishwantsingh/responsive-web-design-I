@@ -132,7 +132,7 @@ hr {
 	text-align:left;
 }
 .para3 {
-	margin: 100px 210px 100px 200px;
+    margin: 100px 210px 100px 200px;
 }
 .bottomdata {
 	display: flex;
@@ -151,19 +151,16 @@ footer {
 	text-align: center;
 }
 .para4 {
-	padding: 20px;
-	/* width: 290px;
-	height: 100px; */
+    padding: 20px;
+    
 }
 .para5 {
-	padding: 20px;
-	/* width: 290px;
-	height: 100px; */
+    padding: 20px;
+    
 }
 .para6 {
-	padding: 20px;
-	/* width: 290px;
-	height: 100px; */
+    padding: 20px; 
+    
 }
 .para1 {
 	padding: 20px;
@@ -316,7 +313,7 @@ ul {
         width: 380px;
     }
     .para2 {
-        height: 20px;
+        height: 200px;
         width: 380px;
     }
     .bottomdata {
@@ -325,8 +322,12 @@ ul {
         margin: 0 auto;
     }
     .para3 {
-        
         margin: 0 auto;
+
+    }
+    .main-image {
+        width: 95.875%;
+        margin: 0 20px;
     }
     .para4 {
         height:200px;
@@ -395,6 +396,11 @@ ul {
     }
     .para3 {
         margin: 0 auto;
+    }
+    .main-image {
+        width: 98%;
+        margin: 0 auto;
+        padding: 10px;
     }
     .bottomdata {
         margin: 0 auto;
